@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="muhasebe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-14 06:55:39 &#214;S"/>
+        <attribute name="created" value="bXVoYXNlYmU7IFBDT0dSRVRNRU47IDIwMjUtMDEtMTQ7IDA2OjI3OjAxIMOWUzsgMzEwOQ=="/>
+        <attribute name="edited" value="bXVoYXNlYmU7IFBDT0dSRVRNRU47IDIwMjUtMDEtMTQ7IDA2OjU1OjM5IMOWUzsgMzEyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="135"/>
+            <assign variable="y" expression="654"/>
+            <output expression="&quot;Toplam=&quot;&amp;x+y"/>
+            <output expression="&quot;Ortalama=&quot;&amp;(x+y)/2"/>
+        </body>
+    </function>
+</flowgorithm>

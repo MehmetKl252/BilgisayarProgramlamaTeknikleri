@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="muhasebe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-14 08:33:29 &#214;S"/>
+        <attribute name="created" value="bXVoYXNlYmU7IFBDT0dSRVRNRU47IDIwMjUtMDEtMTQ7IDA3OjIwOjM0IMOWUzsgMzEwOQ=="/>
+        <attribute name="edited" value="bXVoYXNlYmU7IFBDT0dSRVRNRU47IDIwMjUtMDEtMTQ7IDA4OjMzOjI5IMOWUzsgMzExOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x=y">
+                <then>
+                    <output expression="&quot;FArk&#305;=&quot;&amp;x-y"/>
+                </then>
+                <else>
+                    <if expression="x&gt;y">
+                        <then>
+                            <output expression="&quot;Toplam&#305;=&quot;&amp;x+y"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#199;arp&#305;m&#305;=&quot;&amp;x*y"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
