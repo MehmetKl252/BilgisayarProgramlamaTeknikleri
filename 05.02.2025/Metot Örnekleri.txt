@@ -1,0 +1,51 @@
+# Parametresiz metot
+# def sozlesme():
+#     print("Merhaba sözleşme maddeleri.... den oluşur")
+# sozlesme()
+*****************************************************************
+#Parametreli metot
+# def iletisim(bilgi):
+#     print(bilgi)
+# iletisim("Name:")
+# iletisim("Surname")
+# iletisim("Phone")
+# def iletisim(name,surname,phone):
+#     print(name+" "+surname+" "+phone)
+# iletisim("mehmet","kılıç","5522384074")
+# iletisim("ali","duran","5359879821")
+*****************************************************************
+# def iletisim(*bilgi):
+#     print("iletişim bilgileri:",bilgi[1],bilgi[0])
+# iletisim("name","surname","phone","addres","age")
+*****************************************************************
+# def uyruk(ulke="Norway"):
+#     print("I am From: "+ulke)
+# uyruk("Turkey")
+# uyruk()
+# uyruk("Brasil")
+# uyruk()
+# uyruk("ABD")
+# uyruk()
+*****************************************************************
+# def islev(icecek):
+#     for i in icecek:
+#         print(i)
+# meyveler=["elma","muz","portakal"]
+# personel=["mehmet","ali","kemal","mithat"]
+# islev(personel)
+# islev(meyveler)
+*****************************************************************
+# def islev(x):
+#     return 10*x
+# print(islev(1))
+# print(islev(2))
+# print(islev(3))
+*****************************************************************
+import random
+i=1
+x=random.randint(0,10)
+while x!=5:
+    print(i,".deneme",x)
+    x=random.randint(0,10)
+    i=i+1
+print(i,"denemede bulundu Rastgele sayı 5 tir.")
