@@ -1,0 +1,48 @@
+ do
+            {
+                //sayı başlangıcı
+                Console.Write("başlangıç=");
+                int a = int.Parse(Console.ReadLine());
+                //son sayı
+                Console.Write("bitiş=");
+                int b = int.Parse(Console.ReadLine());
+                //dizi eleman sayısı
+                Console.Write("sayı aralığındaki eleman sayısı=");
+                int eleman = int.Parse(Console.ReadLine());
+                Random rnd = new Random();//random nesnesi
+                int[] dizi = new int[eleman];//dizi nesnesi
+
+                for (int i = 0; i < dizi.Length; i++)
+                {
+                    dizi[i] = rnd.Next(a, b);
+                }
+                Console.Write("Sayıları küçükten büyüğe sıralamak için K" +
+                    "\nBüyüken küçüğe sıralamak için B \nçıkmak için Q tuşuna basın\n");
+                ConsoleKeyInfo giris = Console.ReadKey();
+                Console.WriteLine();
+                if (giris.Key == ConsoleKey.K)
+                {
+                    Array.Sort(dizi);
+                    Console.Write("Artan=");
+                    foreach (var item in dizi)
+                    {
+                        Console.Write(item + ",");
+                    }
+                }
+                else if (giris.Key == ConsoleKey.B)
+                {
+                    Array.Sort(dizi);
+                    Array.Reverse(dizi);
+                    Console.Write("Azalan=");
+                    foreach (var item in dizi)
+                    {
+                        Console.Write(item + ",");
+                    }
+                }
+                else if (giris.Key == ConsoleKey.Q)
+                {
+                    Console.WriteLine("çıkış yapıldı..");
+                    break;
+                }
+                else { Console.WriteLine("Lütfen B ve K harflerini kullanınız.."); }
+            } while (true);
