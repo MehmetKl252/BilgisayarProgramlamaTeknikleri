@@ -1,0 +1,35 @@
+10
+12
+13
+15
+20
+35
+40
+25
+85
+40
+60
+elma
+armut
+kayısı
+çilek
+karpuz
+nar
+
+string[] dosya = File.ReadAllLines(@"C:\\Users\pc\Desktop/deneme.txt");
+Console.WriteLine("Aradığınız ifadeyi girin:");
+string arananKelime = Console.ReadLine();
+//int arananSayi = Convert.ToInt32(Console.ReadLine());
+bool bulundu = false;
+
+
+
+foreach (var item in dosya)
+{
+    if (item == arananKelime)
+    {
+        bulundu = true;
+        break;
+    }
+}
+Console.WriteLine(bulundu ? "aranan dizide mevcut" : "aranan dizide mevcut değil");
